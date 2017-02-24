@@ -5,7 +5,7 @@ from sklearn.externals import joblib
 
 sift = cv2.SIFT()
 arr = np.empty((1,128))
-path = "C:\\SUBHAM_MAGIC\\"
+path = "C:\\SUBHAM_MAGIC\\Project\\"
 
 # AK47
 for i in range(1,10):
@@ -87,6 +87,6 @@ arr = arr[1:]
 print arr.shape
 print "Starting Kmeans"
 
-km = KMeans(n_clusters=1000,max_iter=600).fit(arr)
+km = KMeans(n_clusters=1000,max_iter=600,n_init=1,precompute_distances=False,n_jobs=1,verbose=1).fit(arr)
 joblib.dump(km,'kmeans.pkl')
 print km.labels_
