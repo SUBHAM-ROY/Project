@@ -83,6 +83,70 @@ for i in range(100,197):
     pts, desc = sift.detectAndCompute(img,None)
     arr = np.concatenate((arr,desc))
 
+# Hibiscus
+for i in range(1,10):
+    img = cv2.imread(path + "Train/103.hibiscus/103_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/103.hibiscus/103_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/103.hibiscus/103_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+# Ketch
+for i in range(1,10):
+    img = cv2.imread(path + "Train/123.ketch/123_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/123.ketch/123_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/123.ketch/123_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+# Minaret
+for i in range(1,10):
+    img = cv2.imread(path + "Train/143.minaret/143_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/143.minaret/143_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(100,131):
+    img = cv2.imread(path + "Train/143.minaret/143_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+# Sneaker
+for i in range(1,10):
+    img = cv2.imread(path + "Train/191.sneaker/191_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/191.sneaker/191_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/191.sneaker/191_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    arr = np.concatenate((arr,desc))
+
 arr = arr[1:]
 print arr.shape
 print "Starting Kmeans"

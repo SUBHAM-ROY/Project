@@ -6,7 +6,7 @@ import numpy as np
 
 sift = cv2.SIFT()
 km = joblib.load('kmeans.pkl')
-mod = joblib.load('rf_model.pkl')
+mod = joblib.load('nn_model.pkl')
 path = "./"
 y_true = np.concatenate((np.ones(20),np.ones(20)*2,np.ones(20)*3))
 y_true = np.concatenate((y_true,np.ones(20)*4,np.ones(20)*5,np.ones(20)*6))

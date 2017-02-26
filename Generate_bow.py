@@ -127,6 +127,106 @@ for i in range(100,197):
     x = np.concatenate((x,[lst]))
     y = np.concatenate((y,[6]))
 
+# Hibiscus
+for i in range(1,10):
+    img = cv2.imread(path + "Train/103.hibiscus/103_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[7]))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/103.hibiscus/103_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[7]))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/103.hibiscus/103_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[7]))
+
+# Ketch
+for i in range(1,10):
+    img = cv2.imread(path + "Train/123.ketch/123_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[8]))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/123.ketch/123_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[8]))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/123.ketch/123_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[8]))
+
+# Minaret
+for i in range(1,10):
+    img = cv2.imread(path + "Train/143.minaret/143_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[9]))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/143.minaret/143_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[9]))
+
+for i in range(100,131):
+    img = cv2.imread(path + "Train/143.minaret/143_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[9]))
+
+# Sneaker
+for i in range(1,10):
+    img = cv2.imread(path + "Train/191.sneaker/191_000"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[10]))
+
+for i in range(10,100):
+    img = cv2.imread(path + "Train/191.sneaker/191_00"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[10]))
+
+for i in range(100,112):
+    img = cv2.imread(path + "Train/191.sneaker/191_0"+str(i)+".jpg",0)
+    pts, desc = sift.detectAndCompute(img,None)
+    cnt = collections.Counter(km.predict(desc))
+    lst = [cnt[i] for i in range(0,1000)]
+    x = np.concatenate((x,[lst]))
+    y = np.concatenate((y,[10]))
+
 x = x[1:]
 y = y[1:]
 
